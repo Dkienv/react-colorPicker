@@ -3,7 +3,7 @@ import { useState } from "react";
 function App() {
   const [color, setColor] = useState("#6F6F6F");
 
-  const handleChange = (e) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setColor(e.target.value);
   };
 
